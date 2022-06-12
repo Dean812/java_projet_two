@@ -3,13 +3,18 @@ package classes;
 public class Etudiant extends Personne {
 
 	private String niveau;
-	
+
 	public Etudiant() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Etudiant(String niveau) {
-		super();
+	public Etudiant(int num, String nom, String prenom, String niveau) {
+		super(num, nom, prenom);
+		this.niveau = niveau;
+	}
+
+	public Etudiant(int num, String nom, String prenom, Adresse adresse, String niveau) {
+		super(num, nom, prenom, adresse);
 		this.niveau = niveau;
 	}
 
@@ -23,8 +28,7 @@ public class Etudiant extends Personne {
 
 	@Override
 	public String toString() {
-		return "Etudiant [niveau=" + niveau + "]";
+		return super.toString() + "Etudiant [niveau=" + niveau + "]";
 	}
 
-	
 }

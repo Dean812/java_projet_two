@@ -8,12 +8,14 @@ public class Enseignant extends Personne {
 		// TODO Auto-generated constructor stub
 	}
 
-	// qd on add constructeur using field , le premier chiox est une barre déroulante
+	// qd on add constructeur using field , le premier chiox est une barre
+	// déroulante
 	// elle permet de choisir différent constructeur
 	public Enseignant(int num, String nom, String prenom, double salaire) {
 		super(num, nom, prenom);
 		this.salaire = salaire;
 	}
+
 	// exemple de ce constructeur avec teacher
 	public Enseignant(int num, String nom, String prenom, Adresse adresse, double salaire) {
 		super(num, nom, prenom, adresse);
@@ -30,7 +32,7 @@ public class Enseignant extends Personne {
 
 	@Override
 	public String toString() {
-		return "Enseignant [salaire=" + salaire + "]";
+		return "Enseignant [salaire=" + salaire + ", toString()=" + super.toString() + "]";
 	}
 
 }

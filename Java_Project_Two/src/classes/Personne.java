@@ -6,7 +6,7 @@ public class Personne {
 	private String nom;
 	private String prenom;
 	private static int nbrPersonnes;
-	private Adresse adresse; // class agrégation ajouter 
+	private Adresse adresse; // class agrégation ajouter
 
 	public Personne() {
 		super();
@@ -22,14 +22,14 @@ public class Personne {
 	}
 
 	public Personne(int num, String nom, String prenom, Adresse adresse) {
-		super();  // nouveau constructeur lié à adresse 
+		super(); // nouveau constructeur lié à adresse
 		nbrPersonnes++;
 		this.setNum(num);
 		this.nom = nom;
 		this.prenom = prenom;
-	    this.adresse = adresse;
+		this.adresse = adresse;
 	}
-	
+
 	public int getNum() {
 		return num;
 	}
