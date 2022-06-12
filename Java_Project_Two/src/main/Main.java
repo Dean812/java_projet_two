@@ -6,18 +6,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		// importer Personne  - class personne en public
-//		Personne personne1 = new Personne();
-//
-//		personne1.num = 1;
-//		personne1.nom = "Wick";
-//		personne1.prenom = "John";
-//		
-//		System.out.println(" Hi, i'm " + personne1.prenom + " " + personne1.nom + " and i am number " + personne1.num );
-//		System.out.println(personne1); // affichera Classes.Personne@15db9742 si le toString n'est pas construit dans la classe Personne
-		//        class public  ▲ 
 		
-		Personne personne1 = new Personne();
+		Personne personne1 = new Personne(); // run grace a public personne(){super()}
 		
 		// en private ▼ 
 		personne1.setNum(1); // si on met 0, la méthode va renvoyer le message d'erreur
@@ -26,6 +16,11 @@ public class Main {
 		
 		System.out.println("Salut ! Moi c'est " + personne1.getPrenom() + " " + personne1.getNom() + " and i am number " + personne1.getNum() );
 		System.out.println(personne1);
+		
+		Personne personne2 = new Personne(2, "Wick", "John");
+		
+		System.out.println("Salut ! Moi c'est " + personne2.getPrenom() + " " + personne2.getNom() + " and i am number " + personne2.getNum() );
+		System.out.println(personne2);
 	}
 
 }

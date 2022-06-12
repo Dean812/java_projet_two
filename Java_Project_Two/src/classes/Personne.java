@@ -7,8 +7,22 @@ public class Personne {
 	private String nom;
 	private String prenom;
 
+	public Personne() {
+		super();
+	}
 	
-
+	// constructeur auto généré - using fields
+	public Personne(int num, String nom, String prenom) {
+		super();
+//		if (num < 1) {
+//			System.out.println("il est interdit de mettre une valeur négative");
+//		} else { // pour respectuer la cohérence, on met le if comme au setter
+//			this.num = num;
+//		}           du coup, on peut ré écrire comme ci dessus ▲
+		this.setNum(num); //   ou juste appelé la méthode setNum()
+		this.nom = nom;
+		this.prenom = prenom;
+	}
 
 	// constructeur.s accesseurs
 	public int getNum() {
