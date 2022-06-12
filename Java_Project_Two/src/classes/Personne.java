@@ -1,6 +1,8 @@
 package classes;
 
-public class Personne {
+import interfaces.IMiseEnForme;
+
+public class Personne implements IMiseEnForme{
 
 	private int num;
 	private String nom;
@@ -82,6 +84,15 @@ public class Personne {
 	// Classe final , fonction directement utilisable dans main
 	public final void afficherNomComplet() {
 		System.out.println(this.getPrenom() + "  " + this.getNom());
+	}
+
+	public void afficherNomMajuscule() {
+		System.out.println(nom.toUpperCase());
+	}				// le nom vient directement de l'attribut
+
+	public void afficherPrenomMajuscule() {
+		System.out.println(prenom.toUpperCase());
+					// prenom < attribut
 	};
 
 }

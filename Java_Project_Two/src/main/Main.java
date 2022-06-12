@@ -76,5 +76,13 @@ public class Main {
 		
 		// fonction final effectuer dans personne : affiche nom complet
 				student2.afficherNomComplet();
+				
+		System.out.println("----------------------Interface--------------------------");
+		// 2 méthodes viennent de l'interface, insérer dans Personne
+		// elles ont été modifiées pour que soit le nom soit le prénom ( au choix) passe en majuscule
+		
+		student1.afficherNomMajuscule();
+		student1.afficherPrenomMajuscule();
+		
 	}
 }
