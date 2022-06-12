@@ -78,5 +78,10 @@ public class Personne {
 	public String toString() {
 		return "Personne [num=" + num + ", nom=" + nom + ", prenom=" + prenom + ", adresse=" + adresse + "]";
 	}
+	
+	// Classe final , fonction directement utilisable dans main
+	public final void afficherNomComplet() {
+		System.out.println(this.getPrenom() + "  " + this.getNom());
+	};
 
 }

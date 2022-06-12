@@ -72,7 +72,9 @@ public class Main {
 				System.out.println("   " + ((Etudiant) sumup).getNiveau());
 			}
 		}
-
+		System.out.println("--------------function final affichenomcomplet dans class Personne-------------------");
+		
+		// fonction final effectuer dans personne : affiche nom complet
+				student2.afficherNomComplet();
 	}
-
 }
