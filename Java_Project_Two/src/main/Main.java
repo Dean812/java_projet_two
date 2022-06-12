@@ -94,5 +94,11 @@ public class Main {
 		Sport sport = Sport.TENNIS;
 		System.out.println(sport.getCode() + " < code | sport > " + sport.getNom());
 		
+		System.out.println(sport.ordinal()); // affiche 2 , tennis est bien en position 2.
+		
+		System.out.println(Sport.values()[3]); // affiche le nom de la valeur demander
+		
+		
+		
 	}
 }
