@@ -21,6 +21,12 @@ public class Main {
 		
 		System.out.println("Salut ! Moi c'est " + personne2.getPrenom() + " " + personne2.getNom() + " and i am number " + personne2.getNum() );
 		System.out.println(personne2);
+		
+		System.out.println(Personne.getNbrPersonnes()); // valeur 2
+		// sum up : via l'attribut en private statique insérer dans les constructeurs adéquats
+		// la valeur s'incrémente des qu'un objet est utilisé (ici personne1 et 2)
+		
+		
 	}
 
 }
