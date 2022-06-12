@@ -5,7 +5,8 @@ public class Personne {
 	private int num;
 	private String nom;
 	private String prenom;
-	private static int nbrPersonnes; //  compteur tout le tps prit en comte
+	private static int nbrPersonnes;
+	private Adresse adresse; // class agrégation ajouter 
 
 	public Personne() {
 		super();
@@ -20,6 +21,15 @@ public class Personne {
 		this.prenom = prenom;
 	}
 
+	public Personne(int num, String nom, String prenom, Adresse adresse) {
+		super();  // nouveau constructeur lié à adresse 
+		nbrPersonnes++;
+		this.setNum(num);
+		this.nom = nom;
+		this.prenom = prenom;
+	    this.adresse = adresse;
+	}
+	
 	public int getNum() {
 		return num;
 	}
@@ -40,6 +50,14 @@ public class Personne {
 		this.nom = nom;
 	}
 
+	public Adresse getAdresse() {
+		return adresse;
+	}
+
+	public void setAdresse(Adresse adresse) {
+		this.adresse = adresse;
+	}
+
 	public static int getNbrPersonnes() {
 		return nbrPersonnes;
 	}
@@ -58,8 +76,7 @@ public class Personne {
 
 	@Override
 	public String toString() {
-		return "Personne [num=" + num + ", nom=" + nom + ", prenom=" + prenom + "]";
+		return "Personne [num=" + num + ", nom=" + nom + ", prenom=" + prenom + ", adresse=" + adresse + "]";
 	}
 
-	
 }
