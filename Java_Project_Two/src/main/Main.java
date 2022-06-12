@@ -4,6 +4,7 @@ import classes.Adresse;
 import classes.Enseignant;
 import classes.Etudiant;
 import classes.Personne;
+import enums.Sport;
 
 public class Main {
 
@@ -85,6 +86,13 @@ public class Main {
 		student1.afficherPrenomMajuscule();
 		teacher1.afficherNomComplet2("Carrey", "Jim", adresse3);
 		
+		System.out.println("----------------------Enum--------------------------");
+		
+//		Sport sport = Sport.BASKET;
+//		System.out.println(sport);
+		
+		Sport sport = Sport.TENNIS;
+		System.out.println(sport.getCode() + " < code | sport > " + sport.getNom());
 		
 	}
 }
