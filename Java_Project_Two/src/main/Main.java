@@ -83,6 +83,8 @@ public class Main {
 		
 		student1.afficherNomMajuscule();
 		student1.afficherPrenomMajuscule();
+		teacher1.afficherNomComplet2("Carrey", "Jim", adresse3);
+		
 		
 	}
 }

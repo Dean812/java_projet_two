@@ -93,6 +93,12 @@ public class Personne implements IMiseEnForme{
 	public void afficherPrenomMajuscule() {
 		System.out.println(prenom.toUpperCase());
 					// prenom < attribut
-	};
+	}
+	//     surcharge plus compléte + value de l'interface 
+	public void afficherNomComplet2(String nom, String prenom, Adresse adresse) {
+		System.out.println(nom.toUpperCase() + " " + prenom.toUpperCase() + " + value : " + VALUE);
+	}
+
+
 
 }
