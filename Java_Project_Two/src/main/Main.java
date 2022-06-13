@@ -1,9 +1,12 @@
 package main;
 
+import classes.Admin;
 import classes.Adresse;
 import classes.Enseignant;
 import classes.Etudiant;
 import classes.Personne;
+import classes.SuperAdmin;
+import classes.Users;
 import enums.Sport;
 
 public class Main {
@@ -98,7 +101,12 @@ public class Main {
 		
 		System.out.println(Sport.values()[3]); // affiche le nom de la valeur demander
 		
-		
+		System.out.println("----------------------class Abstract - (super)Admin--------------------------");
+	
+		Admin admin = new Admin("Winchester", "Sam");
+		admin.displayFullName();
+		SuperAdmin sAdmin = new SuperAdmin("Winchester", "Dean");
+		sAdmin.displayFullName();
 		
 	}
 }
