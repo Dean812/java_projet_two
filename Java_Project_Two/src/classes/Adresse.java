@@ -1,5 +1,7 @@
 package classes;
 
+import exception.incorrectCodePostalException;
+
 public class Adresse { // class agrégation 
 
 	private String rue;
@@ -7,8 +9,10 @@ public class Adresse { // class agrégation
 	private String ville;
 
 	// coonstructeur fields
-	public Adresse(String rue, String codePostal, String ville) {
-		super();
+	public Adresse(String rue, String codePostal, String ville) throws incorrectCodePostalException {
+		super();                                               // ajout du Throws 
+		if(codePostal.length() < 15)    //
+			throw new incorrectCodePostalException();  //
 		this.rue = rue;
 		this.codePostal = codePostal;
 		this.ville = ville;

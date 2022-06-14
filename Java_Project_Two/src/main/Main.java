@@ -8,10 +8,11 @@ import classes.Personne;
 import classes.SuperAdmin;
 import classes.Users;
 import enums.Sport;
+import exception.incorrectCodePostalException;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws incorrectCodePostalException {
 
 		Personne personne1 = new Personne();
 
