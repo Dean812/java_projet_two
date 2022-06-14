@@ -12,10 +12,11 @@ public class Test {
 		
 		try {
 			int x = 5, y = 0;
-			System.out.println(x/y);    //si on ne connait pas l'exception
-		} catch (ArithmeticException e) {  // just use : Exception e 
-			System.out.println("Exception : Division par zéro");
-		}
+			System.out.println(x/y);    
+		} catch (ArithmeticException e) { 
+		//	System.out.println("Exception : " + e.getMessage());
+			e.printStackTrace(); // Le message présente l'erreur et sa ligne 
+		}					
 		System.out.println("Fin de calcul");
 		
 	}
